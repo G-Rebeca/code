@@ -1,0 +1,174 @@
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.2fr 4fr 0.2fr;
+    grid-template-areas:
+    "h h h h"
+    "s m m v"
+    "f f f f";
+    grid-gap: 0.2rem;
+    background: #0e1013fb;
+}
+
+a {
+  text-decoration: none;
+}
+
+html{
+    background: black;
+}
+
+header {
+    background: #0e1013;
+    grid-area: h;
+    border-radius: 5px;
+    padding-top: 5px;
+    align-items: center;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.header ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.header a{
+  display: block;
+  padding: 20px;
+  color: #01bdc4;
+  font-size: 1.25em;
+}
+
+.header a:hover{
+ background: rgba(255,255,255,0.1); 
+ color: #c1c1c1;
+ border-radius: 5px;
+}
+
+header img{
+  max-width: 130px;
+
+}
+
+main {
+    background: #1b1d20;
+    grid-area: m;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+.vazio{
+    background: #0e1013fb;
+    grid-area: v;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+.sidebar {
+    background: #0e1013fb;
+    grid-area: s;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+  
+  footer {
+    grid-area: f;
+    border-radius: 5px;
+    padding-top: 5px;
+    background: #0e1013;
+    color: #01bdc4;
+    text-align: center;
+    font-size: 1.25em;
+  }
+
+ .main {
+  color: #c1c1c1;
+  font-size: 1.50em;
+  padding: 1rem;
+}
+
+.main a{
+  color: #c1c1c1;
+}
+
+
+.main a:hover{
+  color: #01bdc4;;
+}
+
+.form {
+	width: 100%;
+	height: 600px;
+	background: #1b1d20;
+}
+
+.form h2 {
+	font-weight: normal;
+	color: #c1c1c1;
+	font-size: 21px;
+	text-align: center;
+}
+
+.input-container {
+  text-align: center;
+	margin: 20px;
+}
+
+.input-container span{
+	display: inline-block;
+	width: 100%;
+	color: #c1c1c1;
+	font-size:17px;
+}
+
+.input-container input[type=text]{
+	margin-top: 8px;
+	width: 344px;
+	height:55px;
+	padding: 8px 10px 8px 10px;
+}
+
+.input-container input[type=date]{
+	margin-top: 8px;
+	width: 344px;
+	height:55px;
+	padding: 8px 10px 8px 10px;
+}
+
+.input-container select{
+	margin-top: 8px;
+	width: 344px;
+	height:55px;
+	padding: 8px 10px 8px 10px;
+	border: 1px solid    #ccc;
+}
+
+.input-container input[type=text]:focus{
+	outline: 0;
+}
+
+.form .input-submit-container{
+	text-align: center;
+}
+
+.form input[type=submit]{
+	color: #01bdc4;
+	font-size:25px;
+	width: 280px;
+	height: 56px;
+	display: inline-block;
+	background-color: black;
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	cursor: pointer;
+}
+
+.form input[type=submit]:hover{
+	background: rgba(255,255,255,0.1); 
+  color: #c1c1c1;
+}
