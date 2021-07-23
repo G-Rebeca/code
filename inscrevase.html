@@ -1,0 +1,63 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Inscreva-se</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header> <a href="index.html"><img src="img/ode.svg" alt="logo"></a>
+            <nav class="header">
+                <ul>
+                   <li> <a href="logica.html"> Lógica</a> </li>
+                   <li> <a href="prog.html"> Linguagem</a> </li>
+                   <li> <a href="doc.html"> Documentação</a></li>
+                   <li> <a href="inscrevase.html"> Inscreva-se</a> </li>
+                </ul> <!--ul-->
+           </nav> <!--menu-nav-->
+        </header>
+        <main class="form">
+            <h2>Inscreva-se</h2>
+					<form method="post">
+						<div class= "input-container">
+							<span>Nome</span>
+							<input type="text" name="nome" required/>
+						</div>
+
+						<div class= "input-container">
+							<span>E-mail</span>
+							<input type="text" name="email" required/>
+						</div>
+
+						<div class= "input-container">
+							<span>Data de nascimento</span>
+							<input type="date" name="data" required/>
+						</div>
+
+						<div class= "input-container">
+							<span>Linguagem de programação</span>
+							<select id="lp" name="lp" required>
+								<option value="Java">Java</option>
+								<option value="Python">Python</option>
+								<option value="C++">C++</option>
+							</select>
+						</div>
+
+						<div class = "input-submit-container">
+							<input type="submit" name="enviar" value="Enviar"/>
+						</div>
+					</form>
+        </main>
+        <nav class="sidebar">
+        </nav>
+        <div class="vazio"></div>
+        <footer>
+            <p>Code © 2021.</p>
+        </footer>
+    </div>
+</body>
+</html>
